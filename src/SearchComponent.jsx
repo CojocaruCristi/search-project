@@ -36,7 +36,6 @@ const SearchComponent = () => {
     const navigate = useNavigate();
     const location = useLocation();
     const params = new URLSearchParams(location.search);
-    console.log('render');
     useEffect(() => {
         const paramValue = params.get("value");
         if (!searchValue && paramValue) {
